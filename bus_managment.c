@@ -17,9 +17,9 @@ int bus,seat_book,seat_cancle,bus_num;
 int mainoption,useroption;
 
 int login();
-void book_ticket();
-void cancle_ticket();
-void check_status();
+int book_ticket();
+int cancle_ticket();
+int check_status();
 
 int main()
 {
@@ -77,7 +77,7 @@ int main()
     
         
     }
-
+    return 0;
 }
 int login()
 {
@@ -92,7 +92,7 @@ int login()
     }
     return 0;
 }
-void book_ticket()
+int book_ticket()
 {
     int count=0;
     printf("\n enter bus number:");
@@ -120,8 +120,9 @@ void book_ticket()
         {
             printf("bus not found ! \n");
         }
+      return 0;  
 }
-void cancle_ticket()
+int cancle_ticket()
 {
     int count=0;
     printf("\n enter bus_num:");
@@ -148,8 +149,9 @@ void cancle_ticket()
     {
         printf("bus unavailable\n");
     }
+    return 0;
 }
-void check_status()
+int check_status()
 {
     int found=0;
     printf("\n please enter busnumber:");
@@ -172,6 +174,7 @@ void check_status()
         {
             printf("bus unavailable\n");
         }
+      return 0;  
 }
 
 
