@@ -31,7 +31,7 @@ int main()
     switch(mainoption)
     {
         case 1:
-        if(1==login())
+        if(login()==1)
         {
             do
             {
@@ -72,8 +72,7 @@ int main()
                 break;
                 default:
                 printf("invalid mainoption !\n");
-            return 0;
-        }
+            }
     
         
     }
